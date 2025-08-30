@@ -1,6 +1,6 @@
 {
-	"name": "anchor-bankrun",
-	"version": "0.5.0",
+	"name": "anchor-bankrun-patched",
+	"version": "0.5.0+1",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
@@ -8,7 +8,7 @@
 	],
 	"license": "MIT",
 	"devDependencies": {
-		"@coral-xyz/anchor": "^0.30.0",
+		"@coral-xyz/anchor": "^0.31.1",
 		"@solana/web3.js": ">1.92.0",
 		"@types/bn.js": "^5.1.1",
 		"@types/bs58": "^4.0.1",
