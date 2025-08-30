@@ -1,7 +1,9 @@
-# anchor-bankrun
+# anchor-bankrun-patched
 
 `anchor-bankrun` is a small but powerful extension to [solana-bankrun](https://github.com/kevinheavey/solana-bankrun)
 that enables using both Anchor and Bankrun with only a one-line code change. It does this by exporting a `BankrunProvider` class that can be used as a drop-in replacement for `AnchorProvider` during testing.
+
+> Note: This is a patched version of the original `anchor-bankrun`. This was done due to compatibility issues with `@coral-xyz/anchor` version `0.31.1`
 
 ## Anchor version note
 
@@ -19,7 +21,7 @@ As an alternative, you can use the [spl-token-bankrun](https://www.npmjs.com/pac
 Here's an example using `BankrunProvider` to test an Anchor program:
 
 ```typescript
-import { BankrunProvider, startAnchor } from "anchor-bankrun";
+import { BankrunProvider, startAnchor } from "anchor-bankrun-patched";
 import { Keypair, PublicKey } from "@solana/web3.js";
 import { BN, Program } from "@coral-xyz/anchor";
 import { Puppet } from "./anchor-example/puppet";
@@ -62,7 +64,7 @@ test("anchor", async () => {
 ## Installation
 
 ```
-yarn add anchor-bankrun
+yarn add anchor-bankrun-patched
 ```
 
 ## Why is this a separate package?
